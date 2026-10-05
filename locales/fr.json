@@ -1,0 +1,20 @@
+{
+  "block.business_state.advanced": "Réglages avancés",
+  "block.business_state.apply_hint": "Modifications locales jusqu’à Appliquer. Redémarrez un Run chargé pour utiliser les nouveaux réglages.",
+  "block.business_state.last_state": "Dernier résultat",
+  "block.business_state.model.title": "État métier",
+  "block.business_state.model.description": "Conserve les dossiers corrélés, contrôle leurs révisions et transitions, et garde un journal borné.",
+  "block.business_state.role": "Dossiers et révisions",
+  "block.business_state.error": "Échec de l’opération d’état : {detail}",
+  "block.business_state.help_namespace": "Partition de cette instance de bloc. La modifier sélectionne un état distinct.",
+  "block.business_state.help_initial_state": "État des nouveaux dossiers ; il doit être une clé de transitions.",
+  "block.business_state.help_transitions": "États suivants autorisés par état courant. Un tableau vide définit un état terminal.",
+  "block.business_state.help_max_records": "Dossiers conservés au maximum par namespace. Aucun dossier n’est supprimé automatiquement.",
+  "block.business_state.help_max_journal": "Nombre maximal de transitions récentes par namespace ; les anciennes traces sont élaguées.",
+  "block.business_state.help_max_dedup": "Identifiants conservés par namespace. Un registre plein refuse les nouvelles mutations.",
+  "block.business_state.help_retention_sec": "Conservation du journal et des identifiants, en secondes. Après ce délai, seules les révisions protègent des rejouements.",
+  "block.business_state.help_max_bytes": "Taille maximale d’une requête JSON ou du contenu d’un dossier, en octets.",
+  "block.business_state.invalid_json": "Saisissez un JSON valide avant d’appliquer.",
+  "block.business_state.invalid_number": "Vérifiez la valeur numérique et ses limites.",
+  "block.business_state.saved": "Paramètres appliqués."
+}

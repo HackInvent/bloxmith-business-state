@@ -1,0 +1,56 @@
+[
+  {
+    "key": "namespace",
+    "help": "Partition within this block instance. Changing it selects a different state partition."
+  },
+  {
+    "key": "initial_state",
+    "help": "State assigned to new records; it must be a key in transitions."
+  },
+  {
+    "key": "transitions",
+    "type": "json",
+    "rows": 8,
+    "help": "Allowed next states by current state. An empty array makes a state terminal."
+  },
+  {
+    "key": "max_records",
+    "type": "integer",
+    "min": 1,
+    "max": 10000,
+    "advanced": true,
+    "help": "Maximum retained records per namespace. Records are never deleted automatically."
+  },
+  {
+    "key": "max_journal",
+    "type": "integer",
+    "min": 1,
+    "max": 50000,
+    "advanced": true,
+    "help": "Maximum recent transitions kept per namespace. Older journal entries are pruned."
+  },
+  {
+    "key": "max_dedup",
+    "type": "integer",
+    "min": 1,
+    "max": 100000,
+    "advanced": true,
+    "help": "Maximum event IDs retained per namespace. A full deduplication ledger refuses new mutations."
+  },
+  {
+    "key": "retention_sec",
+    "type": "integer",
+    "min": 60,
+    "max": 7776000,
+    "advanced": true,
+    "help": "Journal and event-ID retention in seconds. Replay protection expires after this delay; record revisions still apply."
+  },
+  {
+    "key": "max_bytes",
+    "type": "integer",
+    "min": 1024,
+    "max": 262144,
+    "advanced": true,
+    "help": "Maximum bytes in one JSON request or record payload."
+  }
+]

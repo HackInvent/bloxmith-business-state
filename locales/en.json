@@ -1,0 +1,20 @@
+{
+  "block.business_state.advanced": "Advanced settings",
+  "block.business_state.apply_hint": "Changes remain local until Apply. Restart a loaded Run to use new settings.",
+  "block.business_state.last_state": "Last result",
+  "block.business_state.model.title": "Business State",
+  "block.business_state.model.description": "Persist correlated records with optimistic revisions, explicit transitions and a bounded event journal.",
+  "block.business_state.role": "Revisioned records",
+  "block.business_state.error": "State operation failed: {detail}",
+  "block.business_state.help_namespace": "Partition within this block instance. Changing it selects a different state partition.",
+  "block.business_state.help_initial_state": "State assigned to new records; it must be a key in transitions.",
+  "block.business_state.help_transitions": "Allowed next states by current state. An empty array makes a state terminal.",
+  "block.business_state.help_max_records": "Maximum retained records per namespace. Records are never deleted automatically.",
+  "block.business_state.help_max_journal": "Maximum recent transitions kept per namespace. Older journal entries are pruned.",
+  "block.business_state.help_max_dedup": "Maximum event IDs retained per namespace. A full deduplication ledger refuses new mutations.",
+  "block.business_state.help_retention_sec": "Journal and event-ID retention in seconds. Replay protection expires after this delay; record revisions still apply.",
+  "block.business_state.help_max_bytes": "Maximum bytes in one JSON request or record payload.",
+  "block.business_state.invalid_json": "Enter valid JSON before applying.",
+  "block.business_state.invalid_number": "Check the numeric value and its limits.",
+  "block.business_state.saved": "Settings applied."
+}
